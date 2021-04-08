@@ -1,5 +1,5 @@
 local outFile = nil;
-local modName = "idlframewok";
+local modName = "noteblockne";
 local blockName = "grid_normal";
 
 local function GenModelBlockItem()
@@ -58,11 +58,12 @@ local function GenItem(_typeName, _itemName)
 
 	outFile:close();
 end
+--GenItem("misc", "idl_ai_terminal");
 
- GenItem("misc", "idl_ai_terminal");
 
 
---GenBlock("idl_glass");
+GenBlock("noteblock_p");
+
 
 -- GenItem("misc", "nano_mender_greater");
 -- GenItem("misc", "package_fade_armor_diamond");

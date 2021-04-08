@@ -1,0 +1,12 @@
+{
+  "harp_pp":{"category": "blocks","subtitle": "harp","sounds": [{"name":  "noteblockne:harp_pp", "stream":  true}]},
+  "basedrum_pp":{"category": "blocks","subtitle": "basedrum","sounds": [{"name":  "noteblockne:basedrum_pp", "stream":  true}]},
+  "snare_pp":{"category": "blocks","subtitle": "snare","sounds": [{"name":  "noteblockne:snare_pp", "stream":  true}]},
+  "hat_pp":{"category": "blocks","subtitle": "hat","sounds": [{"name":  "noteblockne:hat_pp", "stream":  true}]},
+  "bass_pp":{"category": "blocks","subtitle": "bass","sounds": [{"name":  "noteblockne:bass_pp", "stream":  true}]},
+  "flute_pp":{"category": "blocks","subtitle": "flute","sounds": [{"name":  "noteblockne:flute_pp", "stream":  true}]},
+  "bell_pp":{"category": "blocks","subtitle": "bell","sounds": [{"name":  "noteblockne:bell_pp", "stream":  true}]},
+  "guitar_pp":{"category": "blocks","subtitle": "guitar","sounds": [{"name":  "noteblockne:guitar_pp", "stream":  true}]},
+  "chime_pp":{"category": "blocks","subtitle": "chime","sounds": [{"name":  "noteblockne:chime_pp", "stream":  true}]},
+  "xylophone_pp":{"category": "blocks","subtitle": "xylophone","sounds": [{"name":  "noteblockne:xylophone_pp", "stream":  true}]}
+}
