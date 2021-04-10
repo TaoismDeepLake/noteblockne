@@ -29,6 +29,8 @@ tile.idealland_light_basic.name=Idealland Lamp
 
 tile.test.name=Idealland Block A
 tile.noteblock_p.name=Noteblock ++
+tile.noteblock_m.name=Noteblock --
+tile.noteblock_p4.name=Noteblock +4
 
 #Items
 idealland.food.shared.xp_desc=Grants XP: %d

@@ -32,7 +32,7 @@ import static com.deeplake.noteblockne.init.RegistryHandler.initRegistries;
 public class IdlFramework {
     public static final String MODID = "noteblockne";
     public static final String NAME = "NoteBlock For Netease";
-    public static final String VERSION = "0.1.101";
+    public static final String VERSION = "1.0.0";
 
     public static Logger logger;
 

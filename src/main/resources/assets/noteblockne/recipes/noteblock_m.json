@@ -1,0 +1,20 @@
+{
+    "result": {
+        "item": "noteblockne:noteblock_m"
+    },
+    "pattern": [
+        "A",
+        "B"
+
+    ],
+    "type": "forge:ore_shaped",
+    "key": {
+        "B": {
+            "item": "minecraft:planks",
+            "data": 32767
+        },
+        "A": {
+            "item": "minecraft:noteblock"
+        }
+    }
+}

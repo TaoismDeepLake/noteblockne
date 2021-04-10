@@ -62,7 +62,8 @@ end
 
 
 
-GenBlock("noteblock_p");
+GenBlock("noteblock_m");
+GenBlock("noteblock_p4");
 
 
 -- GenItem("misc", "nano_mender_greater");

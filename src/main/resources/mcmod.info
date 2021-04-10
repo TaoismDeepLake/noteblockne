@@ -5,7 +5,7 @@
   "description": "Mod that extends the note block.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://www.mcmod.cn/class/2421.html",
+  "url": "",
   "updateUrl": "",
   "authorList": ["Taoism DeepLake"],
   "credits": "Idealland - they provided this framework.",

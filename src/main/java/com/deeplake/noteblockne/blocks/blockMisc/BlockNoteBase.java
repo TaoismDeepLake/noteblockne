@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 import java.util.List;
 
 public class BlockNoteBase extends BlockNote implements IHasModel {
-    public static final List<SoundEvent> PUBLIC_INSTRUMENTS = Lists.newArrayList(
+    public static final List<SoundEvent> PUBLIC_INSTRUMENTS_PP = Lists.newArrayList(
             ModSoundHandler.harp,
             ModSoundHandler.basedrum,
             ModSoundHandler.snare,
@@ -36,9 +36,35 @@ public class BlockNoteBase extends BlockNote implements IHasModel {
             ModSoundHandler.xylophone
     );
 
-    public float indexModifier = 0f;
+    public static final List<SoundEvent> PUBLIC_INSTRUMENTS_P4 = Lists.newArrayList(
+            ModSoundHandler.p4_harp,
+            ModSoundHandler.p4_basedrum,
+            ModSoundHandler.p4_snare,
+            ModSoundHandler.p4_hat,
+            ModSoundHandler.p4_bass,
+            ModSoundHandler.p4_flute,
+            ModSoundHandler.p4_bell,
+            ModSoundHandler.p4_guitar,
+            ModSoundHandler.p4_chime,
+            ModSoundHandler.p4_xylophone
+    );
 
-    public BlockNoteBase(String name, float indexModifier)
+    public static final List<SoundEvent> PUBLIC_INSTRUMENTS_MM = Lists.newArrayList(
+            ModSoundHandler.mm_harp,
+            ModSoundHandler.mm_basedrum,
+            ModSoundHandler.mm_snare,
+            ModSoundHandler.mm_hat,
+            ModSoundHandler.mm_bass,
+            ModSoundHandler.mm_flute,
+            ModSoundHandler.mm_bell,
+            ModSoundHandler.mm_guitar,
+            ModSoundHandler.mm_chime,
+            ModSoundHandler.mm_xylophone
+    );
+
+    public int indexModifier = 0;
+
+    public BlockNoteBase(String name, int indexModifier)
     {
         super();
         setUnlocalizedName(name);
@@ -60,12 +86,22 @@ public class BlockNoteBase extends BlockNote implements IHasModel {
 
     public SoundEvent publicGetInstrument(int eventId)
     {
-        if (eventId < 0 || eventId >= PUBLIC_INSTRUMENTS.size())
+        if (eventId < 0 || eventId >= PUBLIC_INSTRUMENTS_PP.size())
         {
             eventId = 0;
         }
 
-        return PUBLIC_INSTRUMENTS.get(eventId);
+        switch (indexModifier)
+        {
+            case 2:
+                return PUBLIC_INSTRUMENTS_PP.get(eventId);
+
+            case 4:
+                return PUBLIC_INSTRUMENTS_P4.get(eventId);
+
+            default:
+                return PUBLIC_INSTRUMENTS_MM.get(eventId);
+        }
     }
 
     /**
@@ -79,7 +115,7 @@ public class BlockNoteBase extends BlockNote implements IHasModel {
         if (net.minecraftforge.common.MinecraftForge.EVENT_BUS.post(e)) return false;
         id = e.getInstrument().ordinal();
         param = e.getVanillaNoteId();
-        float f = (float)Math.pow(2.0D, (double)(param - 12) / 12.0D + indexModifier);
+        float f = (float)Math.pow(2.0D, (double)(param - 12) / 12.0D);
         worldIn.playSound((EntityPlayer)null, pos, publicGetInstrument(id), SoundCategory.RECORDS, 3.0F, f);
         //SoundManager.getClampedPitch clamps it into 0.5~2, fk
         worldIn.spawnParticle(EnumParticleTypes.NOTE, (double)pos.getX() + 0.5D, (double)pos.getY() + 1.2D, (double)pos.getZ() + 0.5D, (double)param / 24.0D, 0.0D, 0.0D);
