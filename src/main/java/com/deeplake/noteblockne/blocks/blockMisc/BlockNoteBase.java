@@ -33,8 +33,19 @@ public class BlockNoteBase extends BlockNote implements IHasModel {
             ModSoundHandler.bell,
             ModSoundHandler.guitar,
             ModSoundHandler.chime,
-            ModSoundHandler.xylophone
+            ModSoundHandler.xylobone
     );
+    
+    // Lists.newArrayList(SoundEvents.BLOCK_NOTE_HARP, 
+    // SoundEvents.BLOCK_NOTE_BASEDRUM, 
+    // SoundEvents.BLOCK_NOTE_SNARE, 
+    // SoundEvents.BLOCK_NOTE_HAT, 
+    // SoundEvents.BLOCK_NOTE_BASS, 
+    // SoundEvents.BLOCK_NOTE_FLUTE, 
+    // SoundEvents.BLOCK_NOTE_BELL, 
+    // SoundEvents.BLOCK_NOTE_GUITAR, 
+    // SoundEvents.BLOCK_NOTE_CHIME, 
+    // SoundEvents.BLOCK_NOTE_xylobone);
 
     public static final List<SoundEvent> PUBLIC_INSTRUMENTS_P4 = Lists.newArrayList(
             ModSoundHandler.p4_harp,
@@ -46,7 +57,7 @@ public class BlockNoteBase extends BlockNote implements IHasModel {
             ModSoundHandler.p4_bell,
             ModSoundHandler.p4_guitar,
             ModSoundHandler.p4_chime,
-            ModSoundHandler.p4_xylophone
+            ModSoundHandler.p4_xylobone
     );
 
     public static final List<SoundEvent> PUBLIC_INSTRUMENTS_MM = Lists.newArrayList(
@@ -59,7 +70,7 @@ public class BlockNoteBase extends BlockNote implements IHasModel {
             ModSoundHandler.mm_bell,
             ModSoundHandler.mm_guitar,
             ModSoundHandler.mm_chime,
-            ModSoundHandler.mm_xylophone
+            ModSoundHandler.mm_xylobone
     );
 
     public int indexModifier = 0;

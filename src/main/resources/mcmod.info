@@ -1,10 +1,10 @@
 [
 {
   "modid": "noteblockne",
-  "name": "Netease Noteblock",
+  "name": "Extended Noteblock",
   "description": "Mod that extends the note block.",
   "version": "${version}",
-  "mcversion": "${mcversion}",
+  "mcversion": "1.12.2",
   "url": "",
   "updateUrl": "",
   "authorList": ["Taoism DeepLake"],
