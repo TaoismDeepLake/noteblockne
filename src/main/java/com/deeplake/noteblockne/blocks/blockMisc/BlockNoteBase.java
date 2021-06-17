@@ -9,6 +9,7 @@ import com.deeplake.noteblockne.util.IHasModel;
 import com.deeplake.noteblockne.util.ModSoundHandler;
 import com.google.common.collect.Lists;
 import net.minecraft.block.BlockNote;
+import net.minecraft.block.SoundType;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
@@ -78,6 +79,7 @@ public class BlockNoteBase extends BlockNote implements IHasModel {
     public BlockNoteBase(String name, int indexModifier)
     {
         super();
+        setSoundType(SoundType.WOOD);
         setUnlocalizedName(name);
         setRegistryName(name);
         setCreativeTab(ModCreativeTab.IDL_MISC);
