@@ -1,3 +1,5 @@
+For 1.16.5, see https://github.com/TaoismDeepLake/TryNoteBlock16/
+
 在这里可以看视频教程
 https://www.bilibili.com/video/BV1Ar4y1K7Qk
 See the video tutorial in the link above (vocal in Chinese).
